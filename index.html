@@ -1,92 +1,64 @@
 <!DOCTYPE html>
 <html>
-<head> 
-	<link type="text/css" rel="stylesheet" href="HelloWorld.css"/>
-	<script src="HelloWorld.js"></script>
+<head>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="HelloWorld.css">
+
+
 </head>
 <body>
-	<h1> HELLO, WORLD! </h1>
-	<h4> Where in the world has Caitlin been?? </h4>
-</p>
-	<p class="header"> North America </p>
-		<div class="buttons">
-			<a href="http://balloonfiesta.com/" class="button" id="Albuquerque"> Albuquerque </a>
-			<a href="https://disneyland.disney.go.com/" class="button" id="Anaheim"> Anaheim </a>
-			<a href="http://baltimore.org/" class="button" id="Baltimore"> Baltimore </a>
-			<a href="http://www.banfflakelouise.com/Things-To-Do/Summer-Adventures/Hiking-in-Banff-and-Lake-Louise/Trails/Lake-Louise-Area" class="button" id="Banff"> Banff </a>
-			<a href="http://www.vivabelize.com/tours-activities/cave-expeditions/black-hole-drop/" class="button" id="Belize"> Belize City </a>
-			<a href="http://bigskyresort.com/" class="button" id="BigSky"> Big Sky </a>
-			<a href="http://www.barbados.org/beaches.htm" class="button" id="Barbados"> Bridgetown</a>
-			<a href="http://www.calgarystampede.com/stampede" class="button" id="Calgary"> Calgary </a>
-			<a href="http://www.charlottesgotalot.com/" class="button" id="Charlotte"> Charlotte </a>
-			<a href="http://cruisechicago.com/architecture-tours" class="button" id="Chicago"> Chicago</a>
-			<a href="http://www.yellowstonepark.com/" class="button" id="Cody"> Cody </a>
-			<A href="http://www.visitdallas.com/" class="button" id="Dallas"> Dallas </a>
-			<a href="http://kickinghorseresort.com/summer-main/the-resort/eagles-eye-reservations/" class="button" id="Golden"> Golden</a>
-			<a href="http://www.jacksonhole.com/" class="button" id="Jackson"> Jackson Hole</a>
-			<a href="https://www.sixflags.com/greatadventure" class="button" id="Jersey"> Jersey City</a>
-			<a href="http://www.okwinetours.com/" class="button" id="Kelowna">Kelowna</a>
-			<a href="http://www.mastrosrestaurants.com/" class="button" id="LA"> Los Angeles </a>
-			<a href="http://www.ohanafun.net/activity/show/expeditions_sporting_clays/" class="button" id="Lanai"> Lanai City</a>
-			<a href="https://www.blueman.com/about-the-show/las-vegas" class="button" id="Vegas">Las Vegas</a>
-			<a href="http://www.goofyfootsurfschool.com/" class="button" id="Maui">Maui</a>
-			<a href="http://www.tremblant.ca/en/" class="button" id="Mont">Montreal</a>
-			<a href="http://www.visitmusiccity.com/" class="button" id="Nashville">Nashville</a>
-			<a href="http://www.atlantisbahamas.com/" class="button" id="Nassau">Nassau</a>
-			<a href="http://www.broadway.com/" class="button" id="NY">New York City</a>
-			<a href="https://www.universalorlando.com/Home.aspx" class="button" id="Orlando">Orlando</a>
-			<a href="http://www.parkcitymountain.com/" class="button" id="Park">Park City</a>
-			<a href="https://www.nps.gov/inde/learn/historyculture/stories-libertybell.htm" class="button" id="Phili">Philadelphia</a>
-			<a href="http://www.lansugarden.org/" class="button" id="Portland">Portland</a>
-			<a href="https://www.nps.gov/moru/index.htm" class="button" id="Rapid">Rapid City</a>
-			<a href="https://www.nps.gov/grca/index.htm" class="button" id="Salt">Salt Lake City</a>
-			<a href="https://www.nps.gov/alca/index.htm" class="button" id="San">San Francisco</a>
-			<a href="http://www.everytrail.com/best/hiking-scottsdale-arizona" class="button" id="Scottsdale">Scottsdale</a>
-			<a href="http://www.empmuseum.org/" class="button" id="Seattle">Seattle</a>
-			<a href="https://www.pinkjeeptourssedona.com/pink-jeep-tours-sedona-az/?gclid=CjwKEAjwtLO7BRDax4-I4_6G71USJAA6FjN1Wa4i8n1dWkjxOK7NoxuiAnEXZlEeLQ6KCcHKw5eWFhoCssPw_wcB" class="button" id="Sedona">Sedona</a>
-			<a href="https://www.sunvalley.com/" class="button" id="Sun">Sun Valley</a>
-			<a href="http://www.tellurideskiresort.com/" class="button" id="Telluride">Telluride</a>
-			<a href="https://en.wikipedia.org/wiki/Tikal" class="button" id="Tikal">Tikal</a>
-			<a href="http://www.cntower.ca/intro.html" class="button" id="Toronto">Toronto</a>
-			<a href="http://www.tourismvancouver.com/activities/stanley-park/" class="button" id="Vancouver">Vancouver</a>
-			<a href="http://www.butchartgardens.com/" class="button" id="Victoria">Victoria</a>
+	<div class="nav">
+		<div class="container">
+			<div class="row nav">
+				<div class="col-md-6">
+					<header>
+						<div class="NavOverlay">
+							<img class="NavPic" src="https://fbcdn-photos-c-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-0/q81/p206x206/12744080_3622150957121_5261445843186598108_n.jpg?oh=92f9a5cd0822de67da4dbd4e9c8f004c&oe=57FB5473&__gda__=1474896266_31c5a01c9032f883146f8daf12cb4838"/>
+							<div class="LinkedIn">
+								<a href="https://www.linkedin.com/in/caitlin-hayles-a75b0996">
+								<img id="LinkedIn" src="https://image.freepik.com/free-icon/linkedin-logo_318-50643.png"/></a>
+							</div>
+						</div>
+						<h1><img class="Name" src="http://i350.photobucket.com/albums/q419/Caitlin_Hayles/Caitlin-Hayles_zpssealjubs.png"/></h1>
+					</header>
+				</div>
+				<div class="NavButtonSection">
+					<div class="col-md-offset-2 col-md-1">
+						<div class="NavButton"><a href="#"><img id="AboutMe" src="http://i350.photobucket.com/albums/q419/Caitlin_Hayles/About-Me_zpsgoh5oc4e.png"></a></div>
+					</div>
+					<div class="col-md-1">
+						<div class="NavButton"><a href="#"><img id="Portfolio" src="http://i350.photobucket.com/albums/q419/Caitlin_Hayles/Portfolio_zpsjjbezqqe.png"></a></div>
+					</div>
+					<div class="col-md-1">
+						<div class="NavButton"><a href="#"><img id="Interests" src="http://i350.photobucket.com/albums/q419/Caitlin_Hayles/Interests_zpsmimwdxam.png"></a></div>
+					</div>
+					<div class="col-md-1">
+						<div class="NavButton"><a href="#"><img id="Travel" src="http://i350.photobucket.com/albums/q419/Caitlin_Hayles/Travel_zpseartjvl7.png"></a></div>
+					</div>
+				</div>
+			</div>
 		</div>
-	<p class="header"> South America </p>
-		<div class="buttons">
-			<a href="https://turismo.buenosaires.gob.ar/en/article/tango" class="button" id="Buenos"> Buenos Aires </a>
-			<a href="https://www.galapagosislands.com/index.php" class="button" id="Galapagos">Galapagos Islands</a>
-			<a href="https://www.lonelyplanet.com/ecuador/quito" class="button" id="Quito"> Quito</a>
-		</div>
-	<p class="header"> Europe </p>
-		<div class="buttons">
-			<a href="http://www.sagradafamilia.org/en/" class="button" id="Barcelona"> Barcelona </a>
-			<a href="http://www.edinburghcastle.gov.uk/" class="button" id="ed"> Edinburgh</a>
-			<a href="https://en.wikipedia.org/wiki/Rumelihisar%C4%B1" class="button" id="Istan"> Istanbul</a>
-			<a href="http://www.hrp.org.uk/" class="button" id="London"> London </a>
-			<a href="http://www.timeout.com/nice/features/367/beaches-in-nice" class="button" id="Nice">Nice</a>
-			<a href="http://www.wga.hu/html_m/zgothic/mosaics/5monreal/" class="button" id="Palermo"> Palermo</a>
-			<a href="http://www.louvre.fr/en" class="button" id="Paris"> Paris</a>
-			<a href="http://www.history.com/topics/ancient-history/colosseum" class="button" id="Rome"> Rome</a>
-			<a href="https://en.wikipedia.org/wiki/York_city_walls" class="button" id="York">York</a>
-		</div>
-	<p class="header"> Africa </p>
-		<div class="buttons">
-			<a href="http://www.tablemountainnationalpark.org/" class="button" id="Cape"> Cape Town </a>
-			<a href="http://www.wilderness-safaris.com/countries/botswana/regions/okavango-delta" class="button" id="Delta">Okavango Delta</a>
-			<a href="http://www.bitesandsites.co.za/" class="button" id="Stell"> Stellenbosch </a>
-			<a href="http://travel.nationalgeographic.com/travel/world-heritage/victoria-falls/" class="button" id="Vic"> Victoria Falls</a>
-		</div>
-	<p class="header"> Asia </p>
-		<div class="buttons">
-			<a href="http://yachtcharterbodrum.net/" class="button" id="Bodrum"> Bodrum </a>
-			<a href="http://www.hotairballooncappadocia.com/" class="button" id="Cap">Cappadocia</a>
-		</div>
-	<div id="footer">
-		<p class="header">See more of:</p>
-			<a href="https://www.lonelyplanet.com/north-america" class="footer">North America</a>
-			<a href="https://www.lonelyplanet.com/south-america" class="footer">South America</a>
-			<a href="https://www.lonelyplanet.com/europe" class="footer">Europe</a>
-			<a href="https://www.lonelyplanet.com/africa" class="footer">Africa</a>
-			<a href="https://www.lonelyplanet.com/asia" class="footer">Asia</a>
+	</div>
+	<div class="container">
+		<div class="jumbotron"></div>
+	</div>
+	<div class="container">
+		<div class="footer"></div>
+	</div>
 
 </body>
+</html>

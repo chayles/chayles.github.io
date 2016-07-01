@@ -1,0 +1,40 @@
+Last login: Thu Jun 16 13:32:55 on ttys000
+Caitlins-MBP:~ caitlinhayles$ mkdir /path/to/source-code
+mkdir: /path/to: No such file or directory
+Caitlins-MBP:~ caitlinhayles$ cd /path/to/source-code
+-bash: cd: /path/to/source-code: No such file or directory
+Caitlins-MBP:~ caitlinhayles$ git clone https://github.com/chayles/chayles1.github.io.git
+Cloning into 'chayles1.github.io'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.
+Caitlins-MBP:~ caitlinhayles$ cd chayles1.github.io
+Caitlins-MBP:chayles1.github.io caitlinhayles$ ls
+README.md
+Caitlins-MBP:chayles1.github.io caitlinhayles$ ls -a
+.		..		.git		README.md
+Caitlins-MBP:chayles1.github.io caitlinhayles$ 
+Caitlins-MBP:chayles1.github.io caitlinhayles$ echo "Hello, world" > index.html
+Caitlins-MBP:chayles1.github.io caitlinhayles$ git add index.html
+Caitlins-MBP:chayles1.github.io caitlinhayles$ git commit index.html -m "My hello world commit"
+[master 33eeeaa] My hello world commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 index.html
+Caitlins-MBP:chayles1.github.io caitlinhayles$ git push origin master
+Username for 'https://github.com': chayles
+Password for 'https://chayles@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/chayles/chayles1.github.io.git/'
+Caitlins-MBP:chayles1.github.io caitlinhayles$ git push origin master
+Username for 'https://github.com': chayles
+Password for 'https://chayles@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 296 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/chayles/chayles1.github.io.git
+   8e0b5b2..33eeeaa  master -> master
+Caitlins-MBP:chayles1.github.io caitlinhayles$ 
+
