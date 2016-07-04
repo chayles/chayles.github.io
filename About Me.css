@@ -1,0 +1,29 @@
+body {
+	background: url(http://i350.photobucket.com/albums/q419/Caitlin_Hayles/903289_2370804314237_1889052930_o_zpsnqaixzkj.jpg);
+	background-size: 1000px 600px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	border-radius:25%;
+}
+.header {
+	font-size: 40px;
+	font-family: Lucida, sans-serif;
+	color: white;
+	text-align: center;
+	float: center;
+	background: black;
+}
+#AboutHeader{
+	position:absolute;
+	width:80%;
+	float:center;
+}
+#FastFacts{
+	margin-top: 450px;
+}
+.buttons {
+	float: center;
+	padding: 20px;
+	text-align: center;
+}

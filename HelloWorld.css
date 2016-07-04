@@ -68,11 +68,10 @@
 #Travel:hover{
 	background:url(http://i350.photobucket.com/albums/q419/Caitlin_Hayles/Travel-Hover_zpsrbgipmd2.png);
 }
-.Hover:hover
 
 /*jumbotron*/
 
-.jumbotron{
+.big-pic{
 	background: url(https://scontent.xx.fbcdn.net/t31.0-8/10275294_3579173242705_3973212368197216930_o.jpg);
 	background-size: cover;
 	height: 500px;
