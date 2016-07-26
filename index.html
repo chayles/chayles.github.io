@@ -2,67 +2,27 @@
 <html>
 <head>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 	<link rel="stylesheet" href="HelloWorld.css">
-	<link href='https://fonts.googleapis.com/css?family=Roboto:500,300|Architects+Daughter|Handlee|Josefin+Sans:700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:500,300|Josefin+Sans:700, 300' rel='stylesheet' type='text/css'>
 
 </head>
-<body>
-	<div class="nav">
-		<div class="container">
-			<div class="row nav">
-				<div class="col-md-6">
-					<header>
-						<div class="NavOverlay">
-							<img class="NavPic" src="https://fbcdn-photos-c-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-0/q81/p206x206/12744080_3622150957121_5261445843186598108_n.jpg?oh=92f9a5cd0822de67da4dbd4e9c8f004c&oe=57FB5473&__gda__=1474896266_31c5a01c9032f883146f8daf12cb4838"/>
-							<div class="LinkedIn">
-								<a href="https://www.linkedin.com/in/caitlin-hayles-a75b0996">
-								<img id="LinkedIn" src="https://image.freepik.com/free-icon/linkedin-logo_318-50643.png"/></a>
-							</div>
-						</div>
-						<p><a class="NavLink" id="Name" href="index.html">Caitlin Hayles</a></p>
-					</header>
-				</div>
-				<div class="NavButtonSection">
-					<div class="col-md-6">
-						<div class="col-md-3">
-							<div class="NavButton"><a class="NavLink" href="AboutMe.html">About Me</a></div>
-						</div>
-						<div class="col-md-3">
-							<div class="NavButton"><a class="NavLink" href="Portfolio.html">Portfolio</a></div>
-						</div>
-						<div class="col-md-3">
-							<div class="NavButton"><a class="NavLink" href="Interests.html">Interests</a></div>
-						</div>
-						<div class="col-md-3">
-							<div class="NavButton"><a class="NavLink" href="Travel.html">Travel</a></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+<body ng-app="helloWorldApp">
 
-	<div class="container">
-		<div class="big-pic"></div>
-	</div>
+<!-- Nav bar and Footer for every page -->
+<div class="container" ng-View></div>
+
+
 	
-	<div class="container">
-		<div class="footer"></div>
-	</div>
+	<div class="footer"></div>
+
+
+
+<!-- JavaScript and Angular Links -->
+	<script src="angular.js"></script>
+	<script src="angular-route.js"></script>
+	<script src="HelloWorld.js"></script>
 
 </body>
 </html>
