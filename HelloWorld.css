@@ -92,9 +92,9 @@
     height: 2.5px;
     width: 0;
     background: brown;
-    transition: width .5s ease;
-    -webkit-transition: width .5s ease, background-color .5s ease;
-    -moz-transition: width .5s ease, background-color .5s ease;
+    transition: width .4s ease;
+    -webkit-transition: width .4s ease, background-color .4s ease;
+    -moz-transition: width .4s ease, background-color .4s ease;
  	position: absolute;
     right: 50%;
     bottom: -24px;
@@ -103,9 +103,9 @@
 .NavLink:hover:before{
     width: 70%;
     background: #5ecae6;
-    transition: width .5s ease;
-    -webkit-transition: width .5s ease;
-    -moz-transition: width .5s ease;
+    transition: width .4s ease;
+    -webkit-transition: width .4s ease;
+    -moz-transition: width .4s ease;
 }
 .Navlink:hover:after{
 	width: 70%;
@@ -152,6 +152,40 @@
 }
 
 /*Home Page*/
+.WelcomeOverlay{
+	background-color: rgba(255,255,255,.75);
+	text-align:center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right:0;
+	left:0;
+	z-index: 2;
+}
+.WelcomeText {
+	font-size: 17px;
+	font-family: "Roboto",sans-serif;
+	font-weight: 300;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 50%;
+	height: 300px;
+	background-color: rgba(17, 92, 110, .7);
+	border-radius: 10px;
+	padding: 30px;
+	color: white;
+}
+.WelcomeText h1{
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 50px;
+	font-weight: 700;
+	margin-top:10px;
+}
+.WelcomeText h5{
+	padding-top:10px;
+}
 .HomePic{
 	background: url(https://scontent.xx.fbcdn.net/t31.0-8/10275294_3579173242705_3973212368197216930_o.jpg);
 	background-position: center;
@@ -219,7 +253,15 @@
 .UK {
 	background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTc6dD0cO9QL3MtYfaOdF83xNWah6FoP4yIs1g5uS5qNLV3bbq6);
 }
-
+.BCHydro{
+	background-image: url("https://www.bchydro.com/content/dam/BCHydro/customer-portal/photographs/people/bchydro-work/outreach-mayday-madeira-park-full-width-people.jpg");
+}
+.BCLung{
+	background-image: url("https://bc.lung.ca/sites/default/files/styles/menu_image_block/public/images/menu_images/RUSH.2.jpg?itok=k63UgvY0");
+}
+.BenefitGala{
+	background-image: url("http://i350.photobucket.com/albums/q419/Caitlin_Hayles/IMG_1982_zpsdhq624dp.jpg");
+}
 /*Portfolio Page Only*/
 
 .PageinProgress{
@@ -262,8 +304,24 @@
 	background-size: 100%;
 	height: 520px;
 	margin-top: 85px;
+	margin-bottom: -30px;
 }
-
+.AboutHeader{
+	text-align:center;
+	font-family: "Roboto", sans-serif;
+	font-size: 30px;
+	color: black;
+	font-variant: small-caps;
+	font-weight: 300;
+	margin-bottom: 15px;
+	margin-top: 10px;
+}
+.Wine{
+	background-image: url(http://i350.photobucket.com/albums/q419/Caitlin_Hayles/IMG_2210_zpspewcpmam.jpg);
+}
+.DoctorWho{
+	background-image: url(https://ichef.bbci.co.uk/images/ic/1200x675/p01lzjsf.jpg);
+}
 .Broadway{
 	background-image: url(http://i350.photobucket.com/albums/q419/Caitlin_Hayles/IMG_1853_zpsvfcvik57.jpg);
 }
@@ -278,15 +336,6 @@
 	margin-top: 85px;
 }
 
-.header {
-	font-size: 40px;
-	font-family: 'Handlee', sans-serif;
-	color: white;
-	text-align: center;
-	float: center;
-	background: black;
-	margin-top: 7px;
-}
 .buttons {
 	float: center;
 	padding: 20px;

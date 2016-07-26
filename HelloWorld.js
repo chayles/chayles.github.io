@@ -20,10 +20,14 @@ app.config(function($routeProvider){
 });
 
 app.controller("HomeCtrl", function($scope){
-
+	$scope.Welcome = true;
+	$scope.exitWelcome = function(){
+		$scope.Welcome = false;
+	}
 });
 
 app.controller("AboutMeCtrl", function($scope){
+
 });
 
 app.controller("PortfolioCtrl", function($scope){
