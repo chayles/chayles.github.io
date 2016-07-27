@@ -98,6 +98,7 @@
  	position: absolute;
     right: 50%;
     bottom: -24px;
+    left: 2px;
     transform: translate(0, 50%);
 }
 .NavLink:hover:before{
@@ -122,6 +123,9 @@
 .BeforeFooter{
 	height: 40px;
 	margin-top: 10px;
+}
+.BeforeFooterSmall{
+	height: 40px;
 }
 .footer{
 	text-align: center;
@@ -259,8 +263,27 @@
 .BCLung{
 	background-image: url("https://bc.lung.ca/sites/default/files/styles/menu_image_block/public/images/menu_images/RUSH.2.jpg?itok=k63UgvY0");
 }
+.RA{
+	background-image: url("http://i350.photobucket.com/albums/q419/Caitlin_Hayles/IMG_0671_zpstxvip1tg.jpg");
+}
 .BenefitGala{
 	background-image: url("http://i350.photobucket.com/albums/q419/Caitlin_Hayles/IMG_1982_zpsdhq624dp.jpg");
+}
+.BigSisters{
+	background-image: url("http://i350.photobucket.com/albums/q419/Caitlin_Hayles/IMG_1774_zpsmtxovxw5.jpg");
+}
+.WildLilies{
+	background-image: url("http://hayleyraeblog.com/wp-content/uploads/2016/03/Wild-Lilies-Gala-Canadian-Breast-Cancer-Foundation-Event-Vancouver-Fairmont-Hayley-Rae-Photography_029.jpg");
+	background-size: 105%;
+}
+.REC{
+	text-align: center;
+	background-color: black;
+	height: 560px;
+}
+.RECText{
+	height: 250px;
+	margin-top: -270px;
 }
 /*Portfolio Page Only*/
 
