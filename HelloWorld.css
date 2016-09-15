@@ -377,9 +377,10 @@
 	width: 800px;
 }
 .ThumbnailRowTwo{
-	margin-top: -170px;
+	margin-top: -90px;
 	display: inline;
 }
+
 .Thumbnail {
 	height: 140px;
 	width: 140px;
@@ -388,15 +389,16 @@
 	overflow: hidden;
 	margin-left: 41px;
 	margin-right: 40px;
+	margin-top: 65px;
 	left: 75px;
-	margin-top: 20px;
 	transition: .5s;
 
-	border: 3.5px solid #65a1e7;
-	border-radius: 2%;
+	border: 3px solid white;
+	border-radius: 5px;
 	background: transparent;
 	text-decoration: none;
-	color: #65a1e7;
+	color: white;
+	background-color: rgba(0,0,0,.25);
 
 	-webkit-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
@@ -404,11 +406,8 @@
 	-o-transform: rotate(45deg);
 	transform: rotate(45deg);
 
-	-webkit-transition : border 500ms ease-out;
-	-moz-transition : border 500ms ease-out;
-	-o-transition : border 500ms ease-out;
-	transition : border 500ms ease-out;
 }
+
 .TNtext {
 	width: 140px;
 	height: 140px;
@@ -427,11 +426,12 @@
 	transform: rotate(-45deg);
 }
 .Thumbnail:hover{
-	background-color: #65a1e7;
-	color: white;
-	border: 3px solid white;
+	background-color: rgba(225,225,225,.8);
+	color: black;
+	border: 3px solid black;
 	transition: .55s;
 	border-radius: 5%;
+	opacity: .9;
 }
 
 
@@ -462,8 +462,16 @@
 	transform: translate(-50%, 0);
 }
 .PortfolioBackground{
-	background-image: "BackgroundPortfolio.jpg"
-
+	background-image: url("https://scontent-lga3-1.xx.fbcdn.net/t31.0-8/13002347_10153814639319442_1110712248991663165_o.jpg");
+	margin-top: 0px;
+	background-size: 100%;
+	background-repeat: none;
+	margin-top: -75px;
+	height: 560px;
+}
+.NoteSpacing{
+	height: 60px;
+	background-color: transparent;
 }
 .PortfolioNote{
 	font-family: 'Roboto';
@@ -471,7 +479,12 @@
 	clear: both;
 	text-align: center;
 	font-weight: 300;
-	padding-top: 70px;
+	padding: 10px 0;
+	color: white;
+	background-color: rgba(0,0,0,.45);
+	width: 100%;
+	margin-top: 400px;
+
 }
 /*Interests Page Only*/
 
