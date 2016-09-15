@@ -448,7 +448,7 @@
 	clear: both;
 }
 .PortfolioOverlay{
-	background-color: rgba(0,0,0,.85);
+	background-color: rgba(0,0,0,.925);
 	position: absolute;
 	top: 0;
 	bottom: -780px;
