@@ -32,11 +32,101 @@
 		</div>
 	</div>
 </div>
+<div class="container">
 
-<div class="PageinProgress">
-	<h3>My apologies!</h3> 
-	This page is still under construction. Please visit my old website for :
-	<div>
-		<a class="OnlinePortfolio" href="http://caitlinhayles.yolasite.com/portfolio.php">my online portfolio</a>
+	<div class="PortfolioBackground">
+
+		<div class="ThumbnailRowOne">
+			<div class="Thumbnail">
+				<div class="TNtext" ng-click="showResume()">Resume</div>
+			</div>
+			<div class="Thumbnail">
+				<div class="TNtext" ng-click="showGuide()">Resource Guide</div>
+			</div>
+			<div class="Thumbnail">
+				<div class="TNtext" ng-click="showInfographic()">Infographic</div>
+			</div>
+		</div>
+		<div class="ThumbnailRowTwo">
+			<div class="Thumbnail">
+				<div class="TNtext" ng-click="showNiccan()">Construction Logo</div>
+			</div>
+			<div class="Thumbnail">
+				<div class="TNtext" ng-click="showAdvertorial()">Advertorial</div>
+			</div>
+			<div class="Thumbnail">
+				<div class="TNtext" ng-click="showGPC()">Coupon Book Sample</div>
+			</div>
+			<div class="Thumbnail">
+				<div class="TNtext" ng-click="showBlog()">Co-op Blog</div>
+			</div>
+			<div class="Thumbnail">
+				<div class="TNtext" ng-click="showFacebookPost()">Event Facebook Post</div>
+			</div>
+			<div class="Thumbnail">
+				<div class="TNtext" ng-click="showVolleyball()">Volleyball Logo</div>
+			</div>
+		</div>
+
+		<div class="PortfolioNote">
+			Please give each item a moment to load.
+			<div>For more writing samples, please see my <a href="#/Thirty_Before_Thirty" class="ThirtyLink">30 before 30</a> blog or my Travel page.</div>
+		</div>
+
+		<div ng-show="Resume">
+			<div class="PortfolioOverlay" ng-click="closePortfolioItem()">
+				<object class="PortfolioDisplay" width="800" height="1100" data="Resume.pdf"></object>
+			</div>
+		</div>
+
+		<div ng-show="Guide">
+			<div class="PortfolioOverlay" ng-click="closePortfolioItem()">
+				<object class="PortfolioDisplay" width="800" height="1100" data="Resource_Guide.pdf"></object>
+			</div>
+		</div>
+
+		<div ng-show="Infographic">
+			<div class="PortfolioOverlay" ng-click="closePortfolioItem()">
+				<object class="PortfolioDisplay" width="500" height="800" data="Infographic.pdf"></object>
+			</div>
+		</div>
+
+		<div ng-show="Niccan">
+			<div class="PortfolioOverlay" ng-click="closePortfolioItem()">
+				<object class="PortfolioDisplay" width="450" height="490" data="Niccan_logo.pdf"></object>
+			</div>
+		</div>
+
+		<div ng-show="Advertorial">
+			<div class="PortfolioOverlay" ng-click="closePortfolioItem()">
+				<object class="PortfolioDisplay" width="800" height="1100" data="Advertorial.pdf"></object>
+			</div>
+		</div>
+
+		<div ng-show="GPC">
+			<div class="PortfolioOverlay" ng-click="closePortfolioItem()">
+				<object class="PortfolioDisplay" width="800" height="1100" data="GPC.pdf"></object>
+			</div>
+		</div>
+
+		<div ng-show="Blog">
+			<div class="PortfolioOverlay" ng-click="closePortfolioItem()">
+				<object class="PortfolioDisplay" width="800" height="1100" data="Reflection.pdf"></object>
+			</div>
+		</div>
+
+		<div ng-show="Post">
+			<div class="PortfolioOverlay" ng-click="closePortfolioItem()">
+				<object class="PortfolioDisplay" width="800" height="1100" data="Social_Media_Example.pdf"></object>
+			</div>
+		</div>
+
+		<div ng-show="Volleyball">
+			<div class="PortfolioOverlay" ng-click="closePortfolioItem()">
+				<object class="PortfolioDisplay" width="300" height="450" data="Volleyball-Logo.pdf"></object>
+			</div>
+		</div>
+
 	</div>
+
 </div>

@@ -5,7 +5,7 @@
  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 	<link rel="stylesheet" href="HelloWorld.css">
-	<link href='https://fonts.googleapis.com/css?family=Roboto:500,300|Josefin+Sans:700, 300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:500,300|Josefin+Sans:700, 300|Pacifico: 300|Josefin+Slab' rel='stylesheet' type='text/css'>
 
 </head>
 <body ng-app="helloWorldApp">
@@ -14,10 +14,8 @@
 <div class="container" ng-View></div>
 
 
-	
-	<div class="footer"></div>
 
-
+<div class="footer" ng-show="wantFooter"></div>
 
 <!-- JavaScript and Angular Links -->
 	<script src="angular.js"></script>

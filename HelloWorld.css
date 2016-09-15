@@ -10,6 +10,7 @@
 }
 .container{
 	max-width: 1200px;
+	margin: 0px auto;
 }
 .NavOverlay{
 	width:20%;
@@ -72,6 +73,7 @@
 .NavLink:hover{
 	color:#65a1e7;
 	text-decoration: none;
+	font-weight: 500;
 }
 .NavLink:before{
 	content: '';
@@ -194,8 +196,46 @@
 	background: url(https://scontent.xx.fbcdn.net/t31.0-8/10275294_3579173242705_3973212368197216930_o.jpg);
 	background-position: center;
 	background-size: 140%;
-	height: 520px;
+	height: 550px;
 	margin-top: 85px;
+}
+.Thirty{
+	position: absolute;
+	font-size: 15px;
+	color: white;
+	height: 20px;
+	bottom: 5%;
+	right: 8%;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	text-align: center;
+	height: 65px;
+	width: 150px;
+	background-color: rgba(255,255,255,.5);
+	border-radius: 10px;
+	padding: 4px 5px 5px 5px;
+	font-variant: small-caps;
+}
+.ThirtyLink{
+	font-size: 25px;
+	padding-top: -50px;
+	font-family: 'Pacifico';
+	font-variant: none;
+	color: white;
+	text-shadow: 0px 0px 4px rgba(0,0,0,.6);
+	text-decoration: none;
+	transition: .4s;
+}
+.ThirtyLink:hover{
+	color: white;
+	text-decoration: none;
+	text-shadow: 0px 0px 7px black;
+	transition: .4s;
+}
+.ThirtyLinked:visited{
+	color: white;
+	text-decoration: none;
+	text-shadow: 0px 0px 4px rgba(0,0,0,.6);	
 }
 
 /*About Me Page Only*/
@@ -203,7 +243,7 @@
 	background: url(https://scontent.xx.fbcdn.net/t31.0-8/903289_2370804314237_1889052930_o.jpg);
 	background-position: center top;
 	background-size: 102%;
-	height: 520px;
+	height: 550px;
 	margin-top: 85px;
 	z-index: -2;
 }
@@ -331,13 +371,115 @@
 	color: #115C6e;
 	text-decoration: none;
 }
+.ThumbnailRowOne{
+	margin-top: 150px;
+	margin-left: 110.5px;
+	width: 800px;
+}
+.ThumbnailRowTwo{
+	margin-top: -170px;
+	display: inline;
+}
+.Thumbnail {
+	height: 140px;
+	width: 140px;
+	float: left;
+	display: inline-block;
+	overflow: hidden;
+	margin-left: 41px;
+	margin-right: 40px;
+	left: 75px;
+	margin-top: 20px;
+	transition: .5s;
+
+	border: 3.5px solid #65a1e7;
+	border-radius: 2%;
+	background: transparent;
+	text-decoration: none;
+	color: #65a1e7;
+
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+
+	-webkit-transition : border 500ms ease-out;
+	-moz-transition : border 500ms ease-out;
+	-o-transition : border 500ms ease-out;
+	transition : border 500ms ease-out;
+}
+.TNtext {
+	width: 140px;
+	height: 140px;
+	display: table-cell;
+	vertical-align: middle;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	font-variant-caps: small-caps;
+	font-weight: 500;
+	line-height: 19px;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.Thumbnail:hover{
+	background-color: #65a1e7;
+	color: white;
+	border: 3px solid white;
+	transition: .55s;
+	border-radius: 5%;
+}
+
+
+.container > div:nth-child(7n+5) {
+	margin-left: 186px;
+}
+.container > div:nth-child(n+5) {
+	margin-top: -64px;
+}
+
+.clear::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.PortfolioOverlay{
+	background-color: rgba(0,0,0,.85);
+	position: absolute;
+	top: 0;
+	bottom: -780px;
+	left: 0;
+	right: 0;
+}
+.PortfolioDisplay{
+	margin: 150px auto;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+.PortfolioBackground{
+	background-image: "BackgroundPortfolio.jpg"
+
+}
+.PortfolioNote{
+	font-family: 'Roboto';
+	font-size: 16px ;
+	clear: both;
+	text-align: center;
+	font-weight: 300;
+	padding-top: 70px;
+}
 /*Interests Page Only*/
 
 .bigPicInterests{
 	background: url(https://scontent.xx.fbcdn.net/t31.0-8/12916216_3663948922044_58338990765327351_o.jpg);
 	background-position: center;
 	background-size: 100%;
-	height: 520px;
+	height: 550px;
 	margin-top: 85px;
 	margin-bottom: -30px;
 }
@@ -388,7 +530,7 @@
 	background-position: center;
 	background-size: 100%;
 	background-position: 50% 88%;
-	height: 520px;
+	height: 550px;
 	margin-top: 85px;
 }
 
@@ -658,3 +800,78 @@
 	font-weight: bold 900;
 	font-size: 50px;
 }
+
+/* THIRTY BEFORE THIRTY SITE*/
+
+/*Home Page*/
+video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+  	background-size: cover;
+  	transition: 1s opacity;
+}
+.ThirtyNav{
+	height: 120px;
+	width: 100%;
+	background-color: #2e1f00;
+	position: absolute;
+	left: 0;
+	font-family: 'Pacifico';
+	font-size: 25px;
+	color: white;
+	text-align: center;
+	display: inline-block;
+	font-family: 'Josefin Slab';
+}
+.ThirtyLogo{
+	width: 10%;
+	margin: 8px auto;
+	margin-bottom: 5px;
+}
+.ThirtyList{
+	width: 300px;
+	height: 500px;
+	overflow: scroll;
+	float: left;
+	left:0;
+	position: absolute;
+	font-size: 18px;
+	font-family: 'Josefin Slab', sans-serif;
+	text-align: left;
+	margin-top: 120px;
+	color: #2e1f00;
+	margin-left: -10px;
+}
+li{
+	padding-top: 15px;
+	padding-right: 20px;
+	list-style: none;
+	border-bottom: 1px solid rgba(133, 60, 7, .5);
+}
+.toHome{
+	color: #2e1f00;
+	text-decoration: none;
+	transition: .4s;
+}
+.toHome:hover{
+	color: #2e1f00;
+	text-decoration: none;
+	text-shadow: .5px .5px #2e1f00;
+	transition: .3s;
+}
+.BlogPost{
+	margin-left: 250px;
+	margin-top: 120px;
+	background-color: blue;
+	height: 100%;
+	width: 100%;
+	clear: both;
+}
+
